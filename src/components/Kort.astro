@@ -1,0 +1,18 @@
+---
+const { imgsrc, mix, farve, kunstnerliste } = Astro.props;
+---
+
+<!-- <article style={"background-color:"+ farve}'> -->
+<article style=`background-color:${farve}`>
+  <figure>
+    <img src={imgsrc} alt="" />
+    <figcaption>{mix}</figcaption>
+  </figure>
+  <p>{kunstnerliste}</p>
+</article>
+
+<style>
+  img {
+    width: 100%;
+  }
+</style>
